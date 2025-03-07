@@ -20,7 +20,6 @@ This project analyzes **market microstructure** using **trades and limit order b
 | 📊 `orders_analysis.ipynb` | **Explores LOB depth, spread, & liquidity metrics** |
 | 📊 `trades_analysis.ipynb` | **Analyzes trade price behavior & execution efficiency** |
 | 📄 `requirements.txt` | Dependencies for reproducibility |
-| 🔬 `test.ipynb` | Testing scripts for data validation |
 
 ---
 
@@ -29,6 +28,7 @@ This project analyzes **market microstructure** using **trades and limit order b
 ### 1️⃣ Data Preprocessing
 - **Merged trades with the closest LOB snapshot** before execution.
 - **Cleaned timestamps and converted timezones** to ensure consistency.
+- **Created the PXA_filtered_merged.csv** after filtering and merging containing 4408 observations. Originally there were 25K orders and 4575 trades.
 
 ### 2️⃣ Market Microstructure Analysis
 - **Bid-Ask Spread Analysis** 📊  
@@ -57,13 +57,6 @@ This project analyzes **market microstructure** using **trades and limit order b
 
 ---
 
-## 🔍 Key Findings
-
-✅ **Liquidity fluctuates throughout the day**, with spread widening at specific periods.  
-✅ **Trade prices often execute at or near the mid-price**, except in volatile conditions.  
-✅ **Hidden orders & dark pool activity** result in **sub-penny price improvements**, despite a 1-cent bid-ask spread.  
-✅ **Order flow imbalance correlates with price movements**, indicating predictive power for short-term price action.  
-
 ---
 
 ## 🚀 Future Enhancements
@@ -78,5 +71,4 @@ This project analyzes **market microstructure** using **trades and limit order b
 
 ### 🔧 Dependencies
 Install required packages:
-```bash
 pip install -r requirements.txt
