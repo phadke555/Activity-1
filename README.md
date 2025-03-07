@@ -1,4 +1,4 @@
-# 📈 Trade & Order Book Analysis for PXA.X
+# 📈 Trade & Order Book Analysis for PXA
 
 **Author:** Rohan Phadke  
 **Last Updated:** 03/07/2025
@@ -16,7 +16,7 @@ This project analyzes **market microstructure** using **trades and limit order b
 |------|------------|
 | 📄 `PXA.X 20250115 Market Depth Legacy x10.csv` | Raw **limit order book (LOB)** data |
 | 📄 `PXA.X 20250115 Stocks Trades.csv` | Raw **trade execution data** |
-| 📄 `PXA_filtered_merged.csv` | **Merged LOB & trade data** for analysis |
+| 📄 `PXA_filtered_merged.csv` | **Merged LOB & trade data** for analysis; created by the author |
 | 📊 `orders_analysis.ipynb` | **Explores LOB depth, spread, & liquidity metrics** |
 | 📊 `trades_analysis.ipynb` | **Analyzes trade price behavior & execution efficiency** |
 | 📄 `requirements.txt` | Dependencies for reproducibility |
